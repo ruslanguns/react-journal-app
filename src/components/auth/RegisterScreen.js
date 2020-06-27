@@ -1,57 +1,61 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 export const RegisterScreen = () => {
-  return (
-    <>
-      <h3 className="auth__title">Register</h3>
+    return (
+        <>
+            <h3 className="auth__title">Register</h3>
 
-      <form>
+            <form>
 
-        <input
-          placeholder="Name"
-          type="text"
-          name="name"
-          autoComplete="off"
-          className="auth__input"
-        />
+                <input 
+                    type="text"
+                    placeholder="Name"
+                    name="name"
+                    className="auth__input"
+                    autoComplete="off"
+                />
 
-        <input
-          placeholder="Email"
-          type="text"
-          name="email"
-          autoComplete="off"
-          className="auth__input"
-        />
+                <input 
+                    type="text"
+                    placeholder="Email"
+                    name="email"
+                    className="auth__input"
+                    autoComplete="off"
+                />
 
-        <input
-          placeholder="Password"
-          type="password"
-          name="password"
-          className="auth__input"
-        />
+                <input 
+                    type="password"
+                    placeholder="Password"
+                    name="password"
+                    className="auth__input"
+                />
 
-        <input
-          placeholder="Confirm password"
-          type="password"
-          name="password2"
-          className="auth__input"
-        />
+                <input 
+                    type="password"
+                    placeholder="Confirm password"
+                    name="password2"
+                    className="auth__input"
+                />
 
-        <button
-          className="btn btn-primary btn-block mb-5"
-          type="submit"
-        >
-          Register
-        </button>
 
-        <Link
-          className="link"
-          to="/auth/login">
-            Already registered?
-        </Link>
-      </form>
-    </>
+                <button
+                    type="submit"
+                    className="btn btn-primary btn-block mb-5"
+                >
+                    Register
+                </button>
 
-  )
+               
+
+                <Link 
+                    to="/auth/login"
+                    className="link"
+                >
+                    Already registered?
+                </Link>
+
+            </form>
+        </>
+    )
 }
